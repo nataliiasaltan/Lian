@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>lian</title>
+
+<head>
+    {{> head/head}}
+</head>
+
+<body>
+    <div class="wrapper">
+        {{> header/header}}
+        <main>
+            <div class="container-flud">
+                <div class="single-item">
+                    <div class="slide" style="background-image: url(images/slider-1.png);">
+                        <div class="slider__wrapper">
+                            <div class="slider__title">Lian Creative Agency</div>
+                            <div class="slider__content">Minimal Freelance Portfolio </div>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url(images/slider-2.png);">
+                        <div class="slider__wrapper">
+                            <div class="slider__title">Lian Creative Agency</div>
+                            <div class="slider__content">Minimal Freelance Portfolio </div>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url(images/slider-1.png);">
+                        <div class="slider__wrapper">
+                            <div class="slider__title">Lian Creative Agency</div>
+                            <div class="slider__content">Minimal Freelance Portfolio </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="tabNav">
+                <div class="container">
+                    <div class="tab__items">
+                        <div class="tab__items-head">
+                            <button data-filter="all">All Works</button>
+                            <button data-filter=".category-a">Branding</button>
+                            <button data-filter=".category-b">Design</button>
+                            <button data-filter=".category-c">Photography</button>
+                            <button data-filter=".category-d">Photography</button>
+                            <button data-filter=".category-e">Photography</button>
+                            <button data-filter=".category-f">Photography</button>
+                        </div>
+                        <div class="tab__items-content">
+                            <a href="#" class="mix category-a" data-order="1">
+                                <img src="img/portfolio_item.jpg" alt="">
+                            </a>
+                            <a href="#" class="mix category-a" data-order="2">
+                                <img src="img/portfolio_item-2.jpg" alt="">
+                            </a>
+                            <a href="#" class="mix category-b" data-order="3">
+                                <img src="img/portfolio_item-3.jpg" alt="">
+                            </a>
+                            <a href="#" class="mix category-c" data-order="4">
+                                <img src="img/portfolio_item-4.jpg" alt="">
+                            </a>
+                            <a href="#" class="mix category-c" data-order="5">
+                                <img src="img/portfolio_item-5.jpg" alt="">
+                            </a>
+                            <a href="#" class="mix category-c" data-order="6">
+                                <img src="img/portfolio_item-6.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        {{> footer/footer}}
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+button,
+input,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+img,
+object,
+embed {
+    vertical-align: bottom;
+}
+
+main {
+    display: block;
+    margin-bottom: 30px;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+a * {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+input,
+textarea {
+    outline: none;
+    resize: none;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?nob3dc');
+    src: url('../fonts/icomoon.eot?nob3dc#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?nob3dc') format('truetype'), url('../fonts/icomoon.woff?nob3dc') format('woff'), url('../fonts/icomoon.svg?nob3dc#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+    content: "\f002";
+}
+
+.icon-heart:before {
+    content: "\f004";
+}
+
+.icon-user:before {
+    content: "\f007";
+}
+
+.icon-align-justify:before {
+    content: "\f039";
+}
+
+.icon-list:before {
+    content: "\f03a";
+}
+
+.icon-heart-o:before {
+    content: "\f08a";
+}
+
+.icon-twitter:before {
+    content: "\f099";
+}
+
+.icon-facebook:before {
+    content: "\f09a";
+}
+
+.icon-facebook-f:before {
+    content: "\f09a";
+}
+
+.icon-google-plus:before {
+    content: "\f0d5";
+}
+
+.icon-linkedin:before {
+    content: "\f0e1";
+}
+
+.icon-comment-o:before {
+    content: "\f0e5";
+}
+
+.icon-angle-left:before {
+    content: "\f104";
+}
+
+.icon-angle-right:before {
+    content: "\f105";
+}
+
+.icon-calendar-o:before {
+    content: "\f133";
+}
+
+.icon-instagram:before {
+    content: "\f16d";
+}
+
+.icon-dribbble:before {
+    content: "\f17d";
+}
+
+.icon-share-alt:before {
+    content: "\f1e0";
+}
+
+.icon-share-alt-square:before {
+    content: "\f1e1";
+}
+
+.icon-copyright:before {
+    content: "\f1f9";
+}
+
+.icon-pinterest-p:before {
+    content: "\f231";
+}
+
+html {
+    height: 100%;
+    min-width: 320px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    font: 14px/1.2 "Roboto", sans-serif;
+    height: 100%;
+    min-width: 320px;
+    position: relative;
+    color: #777777;
+}
+
+a {
+    // color: #fff;
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+* {
+    outline: none;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* ::selection {
+    background: #2600ff;
+    color: #fff;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #fff;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #fff;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+    color: transparent;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+    color: transparent;
+}
+
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+input.placeholder,
+textarea.placeholder {
+    color: #fff !important;
+}
+
+.wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    a {
+        display: block;
+    }
+}
+
+.nav-list {
+    display: flex;
+    position: relative;
+    padding-right: 44px;
+}
+
+.nav-list {
+    .item {
+        padding-left: 44px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 2;
+            width: 20px;
+            height: 2px;
+            background-color: transparent;
+            top: 45%;
+            transform: translateX(0);
+        }
+    }
+    a {
+        display: block;
+        font-weight: 700;
+        line-height: 1.7;
+        letter-spacing: 1.05px;
+        color: #777777;
+        text-transform: uppercase;
+        // &:first-child {
+        //     color: #000000;
+        // }
+    }
+}
+
+.nav-list {
+    a:hover {
+        color: #000000;
+    }
+}
+
+.nav-list {
+    .item {
+        @media screen and (min-width: 1025px) {
+            &:hover {
+                &:before {
+                    background-color: #000;
+                    transform: translateX(-150%);
+                    transition: transform .3s ease;
+                }
+            }
+        }
+    }
+}
+
+.footer__wrapper {
+    padding: 65px 0 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-footer {
+    padding-bottom: 70px;
+    a {
+        display: block;
+    }
+}
+
+.social-networks {
+    display: flex;
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+.social-networks {
+    li+li {
+        padding-left: 55px;
+    }
+}
+
+.social-networks {
+    i {
+        color: #777777;
+        letter-spacing: normal;
+        line-height: 1.7;
+    }
+}
+
+.footer__inner {
+    display: flex;
+    align-items: center;
+}
+
+.copirating {
+    font-size: 13px;
+    line-height: 2;
+    color: #9c9c9c;
+    position: relative;
+    text-transform: uppercase;
+    padding-left: 5px;
+}
+
+.copirating {
+    span {
+        color: #000000;
+    }
+}
